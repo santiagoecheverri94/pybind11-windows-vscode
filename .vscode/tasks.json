@@ -10,6 +10,8 @@
                 "/EHsc",
                 "/I",
                 "${workspaceFolder}/include",
+                "/I",
+                "C:/Users/santi/AppData/Local/Programs/Python/Python313/include",
                 "/nologo",
                 "/Fo${workspaceFolder}/build/",
                 "/Fd${workspaceFolder}/build/",
