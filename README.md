@@ -1,2 +1,2 @@
 # pybind11-windows-vscode
-Simple Git History Tutorial on ow to use Pybind 11 in Windows with VS Code
+Simple Git-History-Based Tutorial on how to use `pybind11` for Python/C++ interoperability in Windows with VS Code.
