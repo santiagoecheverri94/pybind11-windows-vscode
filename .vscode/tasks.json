@@ -19,6 +19,9 @@
                 "/std:c++20",
                 "/permissive-",
                 "${workspaceFolder}/*.cpp",
+                "/link",
+                "/LIBPATH:C:/Users/santi/AppData/Local/Programs/Python/Python313/libs",
+                "/machine:x64"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
