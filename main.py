@@ -1,4 +1,5 @@
 from print import print_list_of_dict, print_list_of_dict_cpp
+import os
 
 
 def main():
@@ -23,4 +24,8 @@ def main():
 
 
 if __name__ == "__main__":
+    if os.environ.get("VSCODE_DEBUG") == "True":
+        print(f"Current process ID: {os.getpid()}")
+        breakpoint()
+
     main()
