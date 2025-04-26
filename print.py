@@ -5,12 +5,12 @@ def print_list_of_dict(msg: list[dict[str, str]]) -> None:
     print()
 
 
-"""
-TODO: Our goal is to implement a function with signature:
+import sys
+import os
 
-def cpp_print_list_of_dict(msg: list[dict[str, str]]) -> None:
+sys.path.append(os.path.abspath("./build"))
+import print_cpp  # type: ignore
 
-This function should be a single line of python code that calls
-the C++ function `PrintVectorOfUnorderedMap(msg)` from
-`cpp_print.cpp`.
-"""
+
+def print_list_of_dict_cpp(msg: list[dict[str, str]]) -> None:
+    print_cpp.PrintVectorOfUnorderedMap(msg)

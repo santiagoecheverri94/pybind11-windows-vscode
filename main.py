@@ -1,4 +1,4 @@
-from print import print_list_of_dict
+from print import print_list_of_dict, print_list_of_dict_cpp
 
 
 def main():
@@ -11,6 +11,15 @@ def main():
     ]
 
     print_list_of_dict(py_msg)
+
+    py_msg = [
+        {"value": "Hello"},
+        {"value": "World"},
+        {"value": "from"},
+        {"value": "Python/C++ interop"},
+    ]
+
+    print_list_of_dict_cpp(py_msg)
 
 
 if __name__ == "__main__":
