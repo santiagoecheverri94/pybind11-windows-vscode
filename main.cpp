@@ -3,6 +3,18 @@
 
 #include "print.hpp"
 
+PYBIND11_MODULE(print_cpp, m)
+{
+    m.doc() = "Python/C++ interoperability example module";
+
+    m.def(
+        "PrintVectorOfUnorderedMap",
+        &PrintVectorOfUnorderedMap,
+        "Prints a Python list[dict[str, str]] binded into a C++ "
+        "std::vector<std::unordered_map<std::string, std::string>>"
+    );
+}
+
 int main()
 {
     std::vector<std::unordered_map<std::string, std::string>> cpp_msg{
